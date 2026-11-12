@@ -276,6 +276,12 @@
   .akita-day .akita-focus{
     font-size:13px;color:var(--ember-deep);margin-bottom:16px;font-weight:500;
   }
+  .akita-day .akita-part{
+    display:flex;align-items:center;gap:12px;
+    margin:22px 0 2px;font-size:13px;font-weight:600;letter-spacing:.04em;color:var(--ember-deep);
+  }
+  .akita-day .akita-part::after{content:"";flex:1;height:1px;background:#EAD6B4;}
+  .akita-day .akita-focus + .akita-part{margin-top:4px;}
   .spot{
     display:flex;gap:14px;align-items:flex-start;
     padding:10px 0;border-bottom:1px dotted var(--line);
@@ -492,15 +498,15 @@
         <details class="day-card" open>
           <summary>
             <span class="day-date">01<small>/31 日</small></span>
-            <span class="day-title">只見線秘境・會津若松城・大內宿<span class="day-sub">摸黑追火車，白天走進江戶時代</span></span>
+            <span class="day-title">只見線秘境・大內宿・會津若松城<span class="day-sub">摸黑追火車，白天走進江戶時代</span></span>
             <span class="chev"></span>
           </summary>
           <div class="day-body">
             <ol class="timeline">
               <li><span class="t">05:30–09:00</span><span class="d">Lolo 前往拍攝只見線<small>意者可同行，7:21、7:39 左右分別有列車經過只見線第一鐵橋</small></span></li>
-              <li><span class="t">09:00–11:00</span><span class="d">退房後將行李寄放在旅館，接著去參訪會津若松城<small>城旁吃壽司郎，或是去大內宿吃大蔥蕎麥麵也可以</small></span></li>
-              <li><span class="t">11:00–14:30</span><span class="d">遊覽大內宿</span></li>
-              <li><span class="t">14:30–16:21</span><span class="d">返回會津若松，租車行還車（先去加滿油），旅館取行李</span></li>
+              <li><span class="t">09:00–13:30</span><span class="d">退房後將行李寄放在旅館，接著去遊覽大內宿<small>中午吃大蔥蕎麥麵，11:00 入席以避開人潮</small></span></li>
+              <li><span class="t">13:30–15:30</span><span class="d">參訪會津若松城（鶴之城）</span></li>
+              <li><span class="t">15:30–16:21</span><span class="d">加滿油後到租車行還車，回旅館取行李</span></li>
               <li><span class="t">16:21–17:35</span><span class="d">搭乘磐越西線前往郡山</span></li>
               <li><span class="t">18:18–19:45</span><span class="d">搭乘新幹線前往山形，享用晚餐後入住東橫INN 山形站西口<small>晚餐：東橫INN 對面讚岐烏龍麵</small></span></li>
             </ol>
@@ -515,9 +521,9 @@
           </summary>
           <div class="day-body">
             <ol class="timeline">
-              <li><span class="t">07:40–08:20</span><span class="d">搭乘山交巴士前往藏王溫泉<small>可將部分行李寄放在山形市東橫INN</small></span></li>
+              <li><span class="t">07:40–08:20</span><span class="d">搭乘山交巴士前往藏王溫泉<small>大件行李可先放在 Lolo 的山形單人房（1/31–2/5 連訂五晚）</small></span></li>
               <li><span class="t">08:20–17:00</span><span class="d">前往旅館「KKR 蔵王白銀荘」寄放隨身行李，在 ROSSIGNOL RENTAL STATION 租借雪具開始滑雪</span></li>
-              <li><span class="t">18:40–19:25</span><span class="d">Lolo 獨自返回山形，入住東橫INN 山形站西口</span></li>
+              <li><span class="t">18:40–19:25</span><span class="d">Lolo 獨自返回山形，入住東橫INN 山形站西口<small>秋田行程輕裝，不拉行李箱；大件行李放在山形單人房</small></span></li>
             </ol>
           </div>
         </details>
@@ -531,7 +537,7 @@
           <div class="day-body">
             <ol class="timeline">
               <li><span class="t">08:30–17:00</span><span class="d">大部隊整天滑雪</span></li>
-              <li><span class="t">07:10–19:19</span><span class="d">Lolo 前往秋田拍田澤湖與內陸線，夜宿角館 Hotel B4T Kakunodate<small>詳細時刻請見「秋田子流程」</small></span></li>
+              <li><span class="t">05:42–19:19</span><span class="d">Lolo 一早搭仙山線去仙台拍伊達政宗騎馬像，再前往秋田拍田澤湖與內陸線，夜宿角館 Hotel B4T Kakunodate<small>詳細時刻請見「秋田子流程」</small></span></li>
             </ol>
           </div>
         </details>
@@ -626,7 +632,7 @@
       <div class="section-head">
         <span class="k">Side quest · Lolo only</span>
         <h2>「秋田」子流程</h2>
-        <p>脱隊三天，仙台無痛轉乘直衝田澤湖，再一頭鑽進秋田內陸線，兩天集齊六大神級攝點。搭乘內陸線時坐車尾、固定坐右手邊，車上也要一路拍；去程回程坐同一側，同一條鐵道，往返之間便能收進截然不同的窗外風景。</p>
+        <p>脱隊三天，仙台無痛轉乘直衝田澤湖，再一頭鑽進秋田內陸線，兩天集齊六大神級攝點。搭乘內陸線時坐車尾、固定坐右手邊，車上也要一路拍；去程回程坐同一側，同一條鐵道，往返之間便能收進截然不同的窗外風景。大件行李放在 Lolo 的山形單人房，秋田行程輕裝出發，不拉行李箱。</p>
       </div>
 
       <div class="akita-day">
@@ -637,38 +643,47 @@
       </div>
 
       <div class="akita-day">
-        <h3>Day 1　2/02（二）探訪田澤湖・獵影大又川・夜宿角館</h3>
-        <div class="akita-focus">今日重點：仙台順暢轉乘，巡禮澄藍深邃的田澤湖，於逆光中捕捉「大又川紅橋」上疾馳而過的急行列車，薄暮時分回到「陸奧小京都」角館安歇</div>
+        <h3>Day 1　2/02（二）朝聖伊達政宗騎馬像・探訪田澤湖・獵影大又川・夜宿角館</h3>
+        <div class="akita-focus">今日重點：朝聖伊達政宗騎馬像，巡禮澄藍深邃的田澤湖，於逆光中捕捉「大又川紅橋」上疾馳而過的急行列車，薄暮時分回到「陸奧小京都」角館安歇</div>
 
-        <div class="spot plain"><span class="num"></span><span class="d"><span class="t">07:10–08:34</span>搭乘仙山線去仙台</span></div>
+        <div class="akita-part">🌊 午前篇：伊達政宗騎馬像 ➔ 田澤湖名景巡禮</div>
+        <div class="spot plain"><span class="num"></span><span class="d"><span class="t">05:42–06:56</span>搭乘仙山線：山形 → 仙台</span></div>
+        <div class="spot plain"><span class="num"></span><span class="d"><span class="t">06:56–09:05</span>仙台兩小時空檔：搭地鐵去仙台城跡，拍伊達政宗騎馬像<small>城跡戶外空間 24 小時開放；建議 08:15 前開始下山折返，趕上 09:05 的新幹線</small></span></div>
         <div class="spot plain"><span class="num"></span><span class="d"><span class="t">09:05–10:25</span>搭乘新幹線前往田澤湖</span></div>
         <div class="spot plain"><span class="num"></span><span class="d"><span class="t">10:45–12:16</span>田澤湖「環湖巴士」景點巡禮<small>11:15–11:35 於「潟尻」下車，拍攝金色辰子像（20分）／ 11:45–11:55 於「御座石神社」下車，拍攝雪中紅色鳥居（10分）</small></span></div>
         <div class="spot plain"><span class="num"></span><span class="d"><span class="t">12:16</span>巴士返回田澤湖站，吃個午餐</span></div>
+        <div class="akita-part">🌆 午後篇：角館 ➔ 大又川紅橋 ➔ 夜宿角館</div>
         <div class="spot plain"><span class="num"></span><span class="d"><span class="t">13:11–13:24</span>搭乘秋田新幹線：田澤湖 → 角館</span></div>
         <div class="spot plain"><span class="num"></span><span class="d"><span class="t">13:24–13:58</span>角館站：購買秋田內陸線外國觀光客用車票（2/02 買 B 類型、2/03 買全線類型，需出示護照）</span></div>
         <div class="spot plain"><span class="num"></span><span class="d"><span class="t">13:58–15:13</span>搭乘秋田內陸線 114D：角館 → 萱草，坐車尾、右手邊，車上也一路拍<small>抵達後步行約 10 分鐘至大又川紅橋攝點</small><span class="warn-note">後面無人車站沒廁所，記得上車前先去上廁所！</span></span></div>
         <div class="spot"><span class="num">1</span><span class="d"><span class="t">15:32 左右</span>攝點① 大又川紅橋：拍攝 1003D（急行もりよし3号，下行）列車（逆光）<small>雪白天地間一抹艷紅，逆光中急行列車破雪而來</small></span></div>
         <div class="spot plain"><span class="num"></span><span class="d"><span class="t">16:52–17:00</span>搭乘秋田內陸線 116D：萱草 → 阿仁合</span></div>
-        <div class="spot plain"><span class="num"></span><span class="d"><span class="t">17:53–19:19</span>搭乘秋田內陸線 117D：阿仁合 → 角館<small>阿仁合停留約 53 分鐘，可利用空檔吃晚餐</small></span></div>
-        <div class="spot plain"><span class="num"></span><span class="d"><span class="t">19:19 ~</span>抵達角館，入住 Hotel B4T Kakunodate</span></div>
+        <div class="spot plain"><span class="num"></span><span class="d"><span class="t">17:00–17:53</span>阿仁合等車（停留約 53 分鐘）<small>在車站好好休息，喝口保溫壺裡的熱飲，養足精神搭 117D 回角館</small></span></div>
+        <div class="spot plain"><span class="num"></span><span class="d"><span class="t">17:53–19:19</span>搭乘秋田內陸線 117D：阿仁合 → 角館</span></div>
+        <div class="spot plain"><span class="num"></span><span class="d"><span class="t">19:19 ~</span>抵達角館，入住 Hotel B4T Kakunodate<small>回到角館在超商買晚餐，順便買好翌日早餐（06:33 就出發）</small></span></div>
       </div>
 
       <div class="akita-day">
         <h3>Day 2　2/03（三）秋田內陸線「極致瘋狂」鐵軌獵影</h3>
         <div class="akita-focus">今日重點：從破曉到暮色，沿著鐵道一路追光，一日集齊「阿仁川鐵橋」＋「前田南站」＋「小渕彎道」＋「荒瀨川鐵橋」＋「比立內橋梁」五大神級攝點</div>
 
+        <div class="akita-part">🌅 晨曦篇：破曉啟程 ➔ 阿仁川鐵橋 ➔ 前田南站</div>
         <div class="spot plain"><span class="num"></span><span class="d"><span class="t">06:33–08:08</span>搭乘秋田內陸線 106D：角館 → 阿仁前田溫泉，坐車尾、右手邊，車上也一路拍</span></div>
         <div class="spot plain"><span class="num"></span><span class="d"><span class="t">08:08 ~</span>抵達阿仁前田溫泉<small>步行約 700 公尺（約 10 分鐘）至阿仁川鐵橋攝點</small><span class="warn-note">後面無人車站沒廁所，記得先在站內上廁所！</span></span></div>
         <div class="spot"><span class="num">2</span><span class="d"><span class="t">08:59 左右</span>攝點② 阿仁川鐵橋（森吉山眺望）：拍攝 9D（下行）列車（逆光）<small>晨光掠過鐵橋，森吉山白雪皚皚，靜靜入鏡</small></span></div>
         <div class="spot plain"><span class="num"></span><span class="d"><span class="t">09:00 ~</span>步行前往前田南站</span></div>
         <div class="spot"><span class="num">3</span><span class="d"><span class="t">09:56 左右</span>攝點③ 前田南站（你的名字經典場景）：拍攝 8D（上行）列車<small>靜謐的雪中小站，一幕銀幕般的經典場景</small></span></div>
+        <div class="akita-part">📸 午前篇：小渕彎道 ➔ 阿仁合</div>
         <div class="spot plain"><span class="num"></span><span class="d"><span class="t">10:53–10:57</span>搭乘 11D（下行）：前田南 → 小渕</span></div>
         <div class="spot"><span class="num">4</span><span class="d"><span class="t">11:33 左右</span>攝點④ 小渕曲線：路邊拍小渕彎道，拍攝 110D（上行）北上列車（頂光）<small>列車沿著雪原彎道流線滑過，頂光下雪色分外明亮</small></span></div>
         <div class="spot plain"><span class="num"></span><span class="d"><span class="t">11:49–11:56</span>搭乘 13D（下行）：小渕 → 阿仁合<small>先在月台上拍列車進站（頂光）；抵達阿仁合後可吃午餐、買秋田內陸線紀念品；預留 30 分鐘步行去荒瀨川橋梁（距離約 2 公里），不浪費中午的時間</small></span></div>
+        <div class="akita-part">🍛 午後篇：荒瀨川鐵橋 ➔ 比立內橋梁</div>
         <div class="spot"><span class="num">5</span><span class="d"><span class="t">13:10 左右</span>攝點⑤ 荒瀨川鐵橋：拍攝 212D（上行）北上列車（頂光）<small>正午頂光灑落，鐵橋橫跨雪原，列車緩緩掠過</small><small>拍完步行約 10 分鐘回荒瀨站</small></span></div>
         <div class="spot plain"><span class="num"></span><span class="d"><span class="t">13:47–14:06</span>搭乘 215D（下行）：荒瀨 → 比立內，坐車尾、右手邊，車上也一路拍<small>抵達後步行 10～15 分鐘至比立內高架橋攝點</small></span></div>
         <div class="spot"><span class="num">6</span><span class="d"><span class="t">15:00 左右</span>攝點⑥ 比立內橋梁：拍攝 114D（上行）北上列車（順光）<small>順光映照混凝土高架拱橋，列車穿越優美的弧線</small><small>拍完步行約 10～15 分鐘回比立內站</small></span></div>
+        <div class="akita-part">🚄 暮色篇：急行南下直達角館</div>
         <div class="spot plain"><span class="num"></span><span class="d"><span class="t">15:50–16:41</span>在比立內站搭乘 1003D（急行もりよし3号，下行）前往角館，一路往南欣賞黃昏秋田山景，準時抵達終點角館，完美收官！</span></div>
+        <div class="akita-part">🚉 賦歸篇：轉乘新幹線返抵山形</div>
         <div class="spot plain"><span class="num"></span><span class="d"><span class="t">16:58–18:29</span>搭乘秋田新幹線（Komachi 34號）前往仙台（使用 JR Pass）<small>仙台站內買便當，轉乘仙山線，上車吃飯</small></span></div>
         <div class="spot plain"><span class="num"></span><span class="d"><span class="t">19:00–20:28</span>搭乘仙山線前往山形（使用 JR Pass）</span></div>
         <div class="spot plain"><span class="num"></span><span class="d"><span class="t">20:28 抵達</span>抵達山形站！入住東橫INN 山形站西口，完美結束這趟充實無比的冬日白色狂想曲！</span></div>
@@ -703,7 +718,7 @@
           <tr><td>1/30</td><td class="mono">14:15–15:20</td><td>JR 東日本</td><td>郡山–會津若松</td><td class="price">¥1,221</td><td class="tag">4大1小</td></tr>
           <tr><td>1/31</td><td class="mono">16:21–17:35</td><td>JR 東日本</td><td>會津若松–郡山</td><td class="price">¥1,221</td><td class="tag">4大1小</td></tr>
           <tr><td>1/31</td><td class="mono">18:18–19:45</td><td>JR 東日本</td><td>郡山–山形（新幹線）</td><td class="price">¥4,960</td><td class="tag">4大1小</td></tr>
-          <tr><td>2/02</td><td class="mono">07:10–08:34</td><td>JR 東日本</td><td>山形–仙台</td><td class="price">¥1,221</td><td class="tag">Lolo 持 JR Pass</td></tr>
+          <tr><td>2/02</td><td class="mono">05:42–06:56</td><td>JR 東日本</td><td>山形–仙台</td><td class="price">¥1,221</td><td class="tag">Lolo 持 JR Pass</td></tr>
           <tr><td>2/02</td><td class="mono">09:05–10:25</td><td>JR 東日本</td><td>仙台–田澤湖（新幹線）</td><td class="price">¥8,320</td><td class="tag">Lolo 持 JR Pass</td></tr>
           <tr><td>2/02</td><td class="mono">13:11–13:24</td><td>JR 東日本</td><td>田澤湖–角館（新幹線）</td><td class="price">¥1,110</td><td class="tag">Lolo 持 JR Pass</td></tr>
           <tr><td>2/02</td><td class="mono">全日</td><td>秋田內陸線</td><td>B 類型（外國觀光客用）</td><td class="price">¥1,500</td><td class="tag"></td></tr>
@@ -736,7 +751,7 @@
           <h3 style="font-size:16px;margin-bottom:14px;">住宿列表</h3>
           <ul class="staylist">
             <li><span class="dt">1/30</span><span class="place"><b>東橫INN 會津若松站前</b></span></li>
-            <li><span class="dt">1/31</span><span class="place"><b>東橫INN 山形站西口</b></span></li>
+            <li><span class="dt">1/31</span><span class="place"><b>東橫INN 山形站西口</b><small>Lolo 單人房 1/31–2/5 連訂五晚，大件行李可寄放</small></span></li>
             <li><span class="dt">2/01</span><span class="place"><b>KKR 蔵王白銀荘</b>（大部隊）＆ 東橫INN 山形站西口（秋田子流程）</span></li>
             <li><span class="dt">2/02</span><span class="place"><b>KKR 蔵王白銀荘</b>（大部隊）＆ Hotel B4T Kakunodate（秋田子流程）</span></li>
             <li><span class="dt">2/03</span><span class="place"><b>KKR 蔵王白銀荘</b>（大部隊）＆ 東橫INN 山形站西口（秋田子流程）</span></li>
@@ -830,7 +845,13 @@
           <ul>
             <li>回程班機時間調整</li>
             <li>藏王住宿確定為 <b>KKR 蔵王白銀荘</b></li>
-            <li>秋田內陸線住宿改為角館 Hotel B4T Kakunodate，故也大幅改動秋田內陸線的路線順序</li>
+            <li>秋田內陸線住宿改為 <b>角館 Hotel B4T Kakunodate</b>，故也大幅改動秋田內陸線的路線順序</li>
+          </ul>
+        </div>
+        <div class="v"><span class="vtag">V9</span>
+          <ul>
+            <li>秋田子流程加入 <b>伊達政宗騎馬像</b>：2/2 一早搭 05:42 仙山線前往仙台，趁 06:56–09:05 的空檔拍攝，再搭新幹線前往田澤湖</li>
+            <li>Lolo 2/1 住宿維持山形，單人房改為 1/31–2/5 連訂五晚，大件行李寄放山形，秋田行程輕裝出發</li>
           </ul>
         </div>
       </div>
